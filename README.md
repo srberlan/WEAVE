@@ -1,7 +1,12 @@
 # WEAVE
 Templates for creating source catalogues for WEAVE-MOS observations
 
-There are two python files, adopted to an specific WEAVE survey needs (SCIP). You only need to modify and run the createFits.py. Just have the other one (createCols.py) in the same directory. The code should be self explanatory, but basically you need to read your data and include each of the columns as a vectors when requested. You will see that some columns are mandatory: make sure you fill those. The other ones can be left empty if you do not have the information, but try to fill as much as possible.
-Once the file is filled with your data, just run the code as: python createFits.py. The output of running the code is a fits catalogue, from which you can create your Observing Blocks.
+There are two Python files provided, adapted for specific WEAVE survey needs (SCIP). You only need to modify and run createFits.py; simply keep the other file (createCols.py) in the same directory.
 
-In case you need to adapt the codes to another MOS survey/program, just modify the specific columns in both codes for generating your prefered WEAVE template.
+The code is designed to be self-explanatory: read your data and include each column as a vector when prompted. Please note that several columns are mandatory. Other columns may be left empty if you do not have the information, but it is best to provide as much detail as possible.
+
+Once you have integrated your data, run the script using:
+
+python createFits.py
+
+The output is a FITS catalogue, which you can then use to create your Observing Blocks. If you need to adapt these scripts for a different MOS survey or program, simply modify the specific column definitions in both files to generate your preferred WEAVE template.
